@@ -1,0 +1,83 @@
+1) To link the index to the stylesheet simply make link tags and establish 
+a connection to the stylesheet, make sure it is the correct location.
+this should be done in the head section, 
+<link rel="stylesheet" href="./css/style.css">
+
+2) In terms of responsiveness, when you press alt tab after ! in a html
+file, alot of the responsive stuff (meta) has been autofilled. 
+This is done to make it usable across many platforms and ratios. 
+
+3)Difference between class and id, you can use either, general rule is 
+id is for someething unique.e.g. one time section, doesnt appear everywhere
+class is for something that is repeated: navbar, header, etc. 
+
+4)For the case above, you should always put the text in corroborating with the tags.e.g.
+<nav> "all things in the navbar" </nav>
+
+5) Unordered list, or /ul, is used to represent a list, collection of items, you usually do this by 
+making an <ul> and then putting a <li> item </li> in there and then closing it with </ul>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+Pretty much like that. 
+
+6)as you know, the <a tag is for hyperlinks, the a standing for anchor, used to describe the connection
+between a link that connects one page to another:
+<a href="https://www.example.com">Click here to visit Example.com</a>
+
+7)When making a showcase section, a nice piece between the navbar and rest of the page below, 
+typically used to showcase services, products, etc; you should make it into a <section> tag 
+just outside the header tag. 
+    <section id="showcase"> 
+and then make a div class container, to keep the grouping clear, 
+follow it with a header tag and paragraph tag for some text. here is an example:
+    <section id="showcase"> 
+        <div class="containter"> 
+        <h1>Afforable Professional Service</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid odit natus delectus odio eius commodi autem quo, voluptatum numquam dolore hic porro maiores quaerat culpa nemo sit itaque facere aliquam?</p>
+
+        </div>
+    </section>
+
+7) Forms, a staple for the modern website, usually below you would have a newletter and a Form
+this would usually be more back-end centred, and by that I mean, you would need to know some php 
+or input a plugin, but we aint gonna do anything too complex here; just a simple input and buttons. 
+    <section id="newsletter">
+        <div class="containter">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email...">
+                <button type="submit" class="button_1">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+8) Making a section showcasing the services you provide is fun, pretty much copy the format above for the rest
+making a container, class div, etc. 
+just make sure your text is small enough, and to resize images, you can simply make one box and copy it 
+down. ::
+        <div class="container">
+            <div class="box">
+                <img src="./images/webdesignwebsitelogo.jpg" alt="">
+               <h3>Web Design</h3> 
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi ratione, alias autem et sequi veniam adipisci nemo tempore, eaque nostrum fugiat a accusamus aut dolores quasi provident saepe corporis?</p>
+            </div>
+            <div class="box">
+                <img src="./images/pentesterwebsitelogo.png" alt="">
+                <h3>Pen Testing</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi ratione, alias autem et sequi veniam adipisci nemo tempore, eaque nostrum fugiat a accusamus aut dolores quasi provident saepe corporis?</p>
+             </div>
+             <div class="box">
+                <img src="./images/gamedesignwebsitelogo.png" alt="">
+                <h3>Game Design</h3> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique commodi ratione, alias autem et sequi veniam adipisci nemo tempore, eaque nostrum fugiat a accusamus aut dolores quasi provident saepe corporis?</p>
+             </div>
+        </div>
+    </section>
+
+

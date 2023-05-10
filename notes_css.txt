@@ -1,0 +1,110 @@
+CSS TIME BABYYY
+
+1) Good thing ab cs is that there is alot more efficient way to do things, 
+I would give examples, actually here is one:
+You can use this instead of typing out three seperate lines. 
+body{
+font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+What this means is that that text size is 15 pixels, 1.5 line height (amount of space between lines of text)
+
+2) For padding, margin and background colour, do this:
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding:0;
+    margin:0;
+    background-color:lightgray;
+}
+
+What this means is that the padding is 0, the space between content and border, the margin is also 0,
+space outside an elements border, and the background colour is light gray. 
+
+3) Making a container to keep all the images in line
+.container{
+    width:80%;
+    margin: auto;
+    overflow:hidden;
+}
+
+4) Header-
+header{
+    background:darkcyan;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+Alot is self-explanatory, except for the padding, min height and border bottom ig. 
+Padding top means  amount of padding to be added to the top of an element.
+Minheight means the minium height of an element, ensure that element will alwyas
+have a min height even if its content is smaller than that height. 
+Border bottom is used to set the style, width and color of the bottom border of an element. 
+
+5) Now to make the hyperlinks white to contrast the bg color of the header:
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+6)header li{
+    float:left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+}
+The above means, for the listed items, we want them to float to the left of the container. 
+Displayed inline with the other elements. 
+Padding is organised into top right bottom and left, with ours having an equal 20px to right and left
+
+7) Some stuff about branding and navbar:
+header #branding{
+    float:left;
+}
+This allows for my AshSoapz Services to float to the left and look nice
+header #branding h1{
+    margin:0;
+}
+Makes it popout a bit
+
+header nav{
+    float:right;
+}
+nicely floats the nav bar right
+
+8)
+The importance of /*global*/
+anything underneath this and above its seperator.e.g. /*header**/ are added globally to the 
+webpage. 
+
+9) Using Global:
+Putting this:ul{
+    margin: 0;
+    padding: 0;
+}
+Under global it makes all ul's have 0 margin padding by default. 
+
+10)header .hightlight, header .current a{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+What we are doing here is making a part of the header be highlighted, and making the link (a) 
+highlihgted too. 
+
+and back to html we have <h1><span class="highlight">AshSoapz</span>Services</h1>
+
+this is done to set the class recognisable and match it with the text. 
+
+We obvs would then do it with the links.
+                    <li class="current"><a href="index.html"> Home</a> </li>
+
+11) Hover over text, make em bold:
+header a:hover{
+    color:#cccccc;
+    font-weight: bold;
+
+}
+
+12)
